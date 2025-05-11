@@ -3,9 +3,6 @@ use_experimental_fxv2_oal 'yes'
 lua54 'yes'
 game "gta5"
 
-name 'template mantine'
-author 'Arius'
-
 
 
 ui_page 'web/build/index.html'
@@ -17,6 +14,13 @@ files {
 }
 
 
+
 client_scripts {
     "init.lua"
+}
+
+
+dependencies {
+    '/server:7290',
+    '/onesync',
 }
